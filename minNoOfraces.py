@@ -26,7 +26,7 @@ def min_races(n: int = NO_OF_BULLS, max_gp_legth: int = GROUP_LENGTH):
     # while no_of_groups>1:
     #   no_of_groups = no_of_groups
 
-    print(total_races)
+    print(f"{n},{max_gp_legth}: {total_races}")
 
 
 min_races()
