@@ -23,13 +23,14 @@ bulls = [Bull(random.uniform(1, 100)) for _ in range(NO_OF_BULLS)]
 random.shuffle(bulls)
 
 groups = [bulls[i:i+GROUP_LENGTH] for i in range(0, len(bulls), GROUP_LENGTH)]
-for i in range(len(gro)):
+for i in range(len(groups)):
     groups[i] = race(groups[i])
 
 
 for i in range(len(groups)):
     top_3 = race(groups[i])
     groups[i] = top_3
+
 
 
 # Step 2: Conduct 6th race and eliminate bulls
